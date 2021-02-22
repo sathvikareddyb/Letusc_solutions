@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main(void)
+{
+    // Declaring Variables
+    int total, gross_salary;
+    float house_rent, dearness_allowence;
+
+    // Ask user for the input
+    printf("salary: ");
+    scanf("%d",&total);
+
+    // Assigning variables based on given information
+    dearness_allowence = 0.4 * total;
+    house_rent = 0.2 * total;
+
+    // calculating gross salary
+    gross_salary = total + dearness_allowence + house_rent;
+    printf("Gross salary = %d\n", gross_salary);
+}
